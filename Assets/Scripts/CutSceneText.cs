@@ -9,7 +9,13 @@ public class CutSceneText : MonoBehaviour
     [SerializeField] private TextEffect cutSceneText;
     [SerializeField] private Image textWritedSymbol;
     [SerializeField] private bool isCutSceneTextWrited = false;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip audioClip;
 
+    public void SetColor(Color color)
+    {
+        cutSceneText.text.color = new Color(color.r, color.g, color.b, cutSceneText.text.color.a);
+    }
     public IEnumerator Write(string text)
     {
         cutSceneText.text.DOFade(1f, 0f);
@@ -21,15 +27,26 @@ public class CutSceneText : MonoBehaviour
         cutSceneText.Refresh();
         cutSceneText.StartManualEffects();
         yield return new WaitForSeconds(0.02f);
+        Coroutine playSound = StartCoroutine(PlaySound());
         cutSceneText.text.transform.localPosition = new Vector3(0f, 0f, 0f);
 
         float secondsToWait = text.Length * 0.1f;
         yield return new WaitUntil(() => Input.GetMouseButtonDown(0) | isCutSceneTextWrited);
+        StopCoroutine(playSound);
         textWritedSymbol.DOFade(1f, 0f);
 
         cutSceneText.StopManualEffects();
         yield return new WaitForSeconds(0.05f);
         isCutSceneTextWrited = false;
+    }
+    public IEnumerator PlaySound()
+    {
+        while(!isCutSceneTextWrited)
+        {
+            audioSource.pitch = 0.85f + Random.Range(-0.15f, 0.15f);
+            audioSource.PlayOneShot(audioClip);
+            yield return new WaitForSeconds(0.15f);
+        }
     }
     public void CutSceneTextWrited()
     {

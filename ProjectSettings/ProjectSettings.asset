@@ -12,12 +12,12 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: Sqqqwer
   productName: LD57
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
-  m_ShowUnitySplashScreen: 1
+  m_ShowUnitySplashScreen: 0
   m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 1
   m_SplashScreenAnimation: 1
@@ -140,8 +140,9 @@ PlayerSettings:
   loadStoreDebugModeEnabled: 0
   visionOSBundleVersion: 1.0
   tvOSBundleVersion: 1.0
-  bundleVersion: 0.1.0
-  preloadedAssets: []
+  bundleVersion: 0.9.0
+  preloadedAssets:
+  - {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -533,7 +534,8 @@ PlayerSettings:
   openGLRequireES31: 0
   openGLRequireES31AEP: 0
   openGLRequireES32: 0
-  m_TemplateCustomTags: {}
+  m_TemplateCustomTags:
+    PRODUCT_DESCRIPTION: 
   mobileMTRendering:
     Android: 1
     iPhone: 1
@@ -551,6 +553,9 @@ PlayerSettings:
   - serializedVersion: 3
     m_BuildTarget: Android
     m_Formats: 03000000
+  - serializedVersion: 3
+    m_BuildTarget: WebGL
+    m_Formats: 05000000
   playModeTestRunnerEnabled: 0
   runPlayModeTestAsEditModeTest: 0
   actionOnDotNetUnhandledException: 1
@@ -796,14 +801,14 @@ PlayerSettings:
   webGLDebugSymbols: 0
   webGLEmscriptenArgs: 
   webGLModulesDirectory: 
-  webGLTemplate: APPLICATION:Default
+  webGLTemplate: APPLICATION:PWA
   webGLAnalyzeBuildSize: 0
   webGLUseEmbeddedResources: 0
-  webGLCompressionFormat: 0
+  webGLCompressionFormat: 1
   webGLWasmArithmeticExceptions: 0
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
-  webGLDecompressionFallback: 0
+  webGLDecompressionFallback: 1
   webGLInitialMemorySize: 32
   webGLMaximumMemorySize: 2048
   webGLMemoryGrowthMode: 2
@@ -817,23 +822,23 @@ PlayerSettings:
   webGLCloseOnQuit: 0
   webWasm2023: 0
   scriptingDefineSymbols:
-    Android: DOTWEEN
-    EmbeddedLinux: DOTWEEN
+    Android: DOTWEEN;RealtimeCSG;RealtimeCSG_1;RealtimeCSG_1_6;RealtimeCSG_1_6_01
+    EmbeddedLinux: DOTWEEN;RealtimeCSG;RealtimeCSG_1;RealtimeCSG_1_6;RealtimeCSG_1_6_01
     GameCoreScarlett: DOTWEEN
-    GameCoreXboxOne: DOTWEEN
+    GameCoreXboxOne: DOTWEEN;RealtimeCSG;RealtimeCSG_1;RealtimeCSG_1_6;RealtimeCSG_1_6_01
     LinuxHeadlessSimulation: DOTWEEN
     Nintendo Switch: DOTWEEN
-    PS4: DOTWEEN
-    PS5: DOTWEEN
-    QNX: DOTWEEN
-    ReservedCFE: DOTWEEN
-    Standalone: DOTWEEN
-    VisionOS: DOTWEEN
-    WebGL: DOTWEEN
+    PS4: DOTWEEN;RealtimeCSG;RealtimeCSG_1;RealtimeCSG_1_6;RealtimeCSG_1_6_01
+    PS5: DOTWEEN;RealtimeCSG;RealtimeCSG_1;RealtimeCSG_1_6;RealtimeCSG_1_6_01
+    QNX: DOTWEEN;RealtimeCSG;RealtimeCSG_1;RealtimeCSG_1_6;RealtimeCSG_1_6_01
+    ReservedCFE: DOTWEEN;RealtimeCSG;RealtimeCSG_1;RealtimeCSG_1_6;RealtimeCSG_1_6_01
+    Standalone: DOTWEEN;RealtimeCSG;RealtimeCSG_1;RealtimeCSG_1_6;RealtimeCSG_1_6_01
+    VisionOS: DOTWEEN;RealtimeCSG;RealtimeCSG_1;RealtimeCSG_1_6;RealtimeCSG_1_6_01
+    WebGL: DOTWEEN;RealtimeCSG;RealtimeCSG_1;RealtimeCSG_1_6;RealtimeCSG_1_6_01
     Windows Store Apps: DOTWEEN
-    XboxOne: DOTWEEN
+    XboxOne: DOTWEEN;RealtimeCSG;RealtimeCSG_1;RealtimeCSG_1_6;RealtimeCSG_1_6_01
     iPhone: DOTWEEN
-    tvOS: DOTWEEN
+    tvOS: DOTWEEN;RealtimeCSG;RealtimeCSG_1;RealtimeCSG_1_6;RealtimeCSG_1_6_01
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:

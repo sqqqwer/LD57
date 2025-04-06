@@ -1,0 +1,294 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9173459248754219051
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5900100894778239720}
+  - component: {fileID: 9086182667003936790}
+  - component: {fileID: 1775107781463881646}
+  - component: {fileID: 7453945117476705055}
+  - component: {fileID: 5728280094948921086}
+  - component: {fileID: 5692307171869171415}
+  - component: {fileID: 3591778062850220565}
+  m_Layer: 0
+  m_Name: FPCamera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5900100894778239720
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9173459248754219051}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.8892913, y: -0.624058, z: -8.059414}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9086182667003936790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9173459248754219051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9dfa5b682dcd46bda6128250e975f58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Priority:
+    Enabled: 1
+    m_Value: 0
+  OutputChannel: 1
+  StandbyUpdate: 2
+  m_StreamingVersion: 20241001
+  m_LegacyPriority: 0
+  Target:
+    TrackingTarget: {fileID: 0}
+    LookAtTarget: {fileID: 0}
+    CustomLookAtTarget: 0
+  Lens:
+    FieldOfView: 70
+    OrthographicSize: 10
+    NearClipPlane: 0.1
+    FarClipPlane: 5000
+    Dutch: 0
+    ModeOverride: 0
+    PhysicalProperties:
+      GateFit: 2
+      SensorSize: {x: 21.946, y: 16.002}
+      LensShift: {x: 0, y: 0}
+      FocusDistance: 10
+      Iso: 200
+      ShutterSpeed: 0.005
+      Aperture: 16
+      BladeCount: 5
+      Curvature: {x: 2, y: 11}
+      BarrelClipping: 0.25
+      Anamorphism: 0
+  BlendHint: 0
+--- !u!114 &1775107781463881646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9173459248754219051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36d1163fa822e8b418a0a603ec078d5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damping: 0.2
+--- !u!114 &7453945117476705055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9173459248754219051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62d54399b04b4fa48a73e121d4937dd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReferenceFrame: 0
+  RecenterTarget: 0
+  PanAxis:
+    Value: 0
+    Center: 0
+    Range: {x: -180, y: 180}
+    Wrap: 1
+    Recentering:
+      Enabled: 0
+      Wait: 1
+      Time: 2
+    Restrictions: 0
+  TiltAxis:
+    Value: 0
+    Center: 0
+    Range: {x: -70, y: 70}
+    Wrap: 0
+    Recentering:
+      Enabled: 0
+      Wait: 1
+      Time: 2
+    Restrictions: 0
+--- !u!114 &5728280094948921086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9173459248754219051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00b2d199b96b516448144ab30fb26aed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ApplyAfter: 2
+  ChannelMask: 1
+  Gain: 1
+  Use2DDistance: 0
+  UseCameraSpace: 1
+  ReactionSettings:
+    m_SecondaryNoise: {fileID: 11400000, guid: e9ce97b7a206dc64d90931ea044e0c72, type: 2}
+    AmplitudeGain: 5.94
+    FrequencyGain: 1.13
+    Duration: 0.04
+    m_NoiseOffsets: {x: 18.499023, y: -432.5942, z: 960.8977}
+--- !u!114 &5692307171869171415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9173459248754219051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89875cdc57c54474a8a74efd9b2a3b5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScanRecursively: 1
+  SuppressInputWhileBlending: 1
+  IgnoreTimeScale: 0
+  m_ControllerManager:
+    Controllers:
+    - Name: Look X (Pan)
+      Owner: {fileID: 7453945117476705055}
+      Enabled: 1
+      Input:
+        InputAction: {fileID: -5630151704836100654, guid: 1d6e640e716dc4ff6989b73d02023f2b, type: 3}
+        Gain: 1
+        LegacyInput: Mouse X
+        LegacyGain: 200
+        CancelDeltaTime: 0
+      InputValue: 0
+      Driver:
+        AccelTime: 0
+        DecelTime: 0
+    - Name: Look Y (Tilt)
+      Owner: {fileID: 7453945117476705055}
+      Enabled: 1
+      Input:
+        InputAction: {fileID: -5630151704836100654, guid: 1d6e640e716dc4ff6989b73d02023f2b, type: 3}
+        Gain: -1
+        LegacyInput: Mouse Y
+        LegacyGain: -200
+        CancelDeltaTime: 0
+      InputValue: -0
+      Driver:
+        AccelTime: 0
+        DecelTime: 0
+  PlayerIndex: -1
+  AutoEnableInputs: 1
+--- !u!82 &3591778062850220565
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9173459248754219051}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 0.40668917
+  MaxDistance: 93.69688
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
